@@ -166,6 +166,9 @@ defmodule PromEx.DashboardRenderer do
       # View defaults
       default_selected_interval: "30s",
 
+      # Global options
+      instance_matcher: "job=\"$job\", instance=\"$instance\"",
+
       # Metrics prefix defaults
       absinthe_metric_prefix: "#{otp_app}_prom_ex_absinthe",
       application_metric_prefix: "#{otp_app}_prom_ex_application",

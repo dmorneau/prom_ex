@@ -119,7 +119,7 @@
       "pluginVersion": "7.1.3",
       "targets": [
         {
-          "expr": "<%= @application_metric_prefix %>_uptime_milliseconds_count{job=\"$job\", instance=\"$instance\"}",
+          "expr": "<%= @application_metric_prefix %>_uptime_milliseconds_count{<%= @instance_matcher %>}",
           "format": "table",
           "instant": true,
           "interval": "",
@@ -239,7 +239,7 @@
       "pluginVersion": "7.1.3",
       "targets": [
         {
-          "expr": "<%= @application_metric_prefix %>_dependency_info{job=\"$job\", instance=\"$instance\"}",
+          "expr": "<%= @application_metric_prefix %>_dependency_info{<%= @instance_matcher %>}",
           "format": "table",
           "instant": true,
           "interval": "",
@@ -325,7 +325,7 @@
       "pluginVersion": "7.1.3",
       "targets": [
         {
-          "expr": "<%= @application_metric_prefix %>_primary_info{job=\"$job\", instance=\"$instance\"}",
+          "expr": "<%= @application_metric_prefix %>_primary_info{<%= @instance_matcher %>}",
           "format": "table",
           "instant": true,
           "interval": "",
@@ -381,7 +381,7 @@
       "pluginVersion": "7.1.3",
       "targets": [
         {
-          "expr": "<%= @application_metric_prefix %>_git_sha_info{job=\"$job\", instance=\"$instance\"}",
+          "expr": "<%= @application_metric_prefix %>_git_sha_info{<%= @instance_matcher %>}",
           "format": "table",
           "instant": true,
           "interval": "",
@@ -437,7 +437,7 @@
       "pluginVersion": "7.1.3",
       "targets": [
         {
-          "expr": "<%= @application_metric_prefix %>_git_author_info{job=\"$job\", instance=\"$instance\"}",
+          "expr": "<%= @application_metric_prefix %>_git_author_info{<%= @instance_matcher %>}",
           "format": "table",
           "instant": true,
           "interval": "",
@@ -493,7 +493,7 @@
       "pluginVersion": "7.1.3",
       "targets": [
         {
-          "expr": "<%= @application_metric_prefix %>_primary_info{job=\"$job\", instance=\"$instance\"}",
+          "expr": "<%= @application_metric_prefix %>_primary_info{<%= @instance_matcher %>}",
           "format": "table",
           "instant": true,
           "interval": "",
@@ -549,7 +549,7 @@
       "pluginVersion": "7.1.3",
       "targets": [
         {
-          "expr": "<%= @application_metric_prefix %>_primary_info{job=\"$job\", instance=\"$instance\"}",
+          "expr": "<%= @application_metric_prefix %>_primary_info{<%= @instance_matcher %>}",
           "format": "table",
           "instant": true,
           "interval": "",
